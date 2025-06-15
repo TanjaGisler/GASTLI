@@ -272,7 +272,7 @@ class coupling:
         self.Mtot = self.M_P + self.Matm_earthunits
         self.CMF_conv = (M_P*x_core)/self.Mtot
 
-
+        self.myatmmodel.calc_interior_mass_fraction(self.Tint, self.g_surf_planet, self.Teq, self.CO_pl, self.log_FeH, P_surf=P_surf)
         self.myatmmodel.calc_thickness(self.Rbulk_Rjup,self.Matm_earthunits)
 
 
